@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="@dimen/home_bottom_tab_height">
+    <RadioButton
+        android:id="@+id/main_btn_home"
+        style="@style/mainTabs_radio"
+        android:text="@string/MSG0000"
+        android:onClick="onTabSelect"
+        android:checked="true"
+        />
+
+    <RadioButton
+        android:id="@+id/main_btn_friend"
+        style="@style/mainTabs_radio"
+        android:onClick="onTabSelect"
+        android:text="@string/MSG0001"
+        />
+
+    <RadioButton
+        android:id="@+id/main_btn_shuoshuo"
+        style="@style/mainTabs_radio"
+        android:onClick="onTabSelect"
+        android:text="@string/MSG0002"
+        />
+</LinearLayout>

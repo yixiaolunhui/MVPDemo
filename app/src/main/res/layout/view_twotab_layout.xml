@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/twotab_message_btn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:button="@null"
+        android:checked="true"
+        android:layout_height="match_parent"
+        android:background="@drawable/view_twotab_left_selector"
+        android:text="消息"
+        android:textColor="@color/view_twotab_text_selector"/>
+
+    <RadioButton
+        android:id="@+id/twotab_phone_btn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:button="@null"
+        android:layout_height="match_parent"
+        android:background="@drawable/view_twotab_right_selector"
+        android:text="电话"
+        android:textColor="@color/view_twotab_text_selector"/>
+
+</LinearLayout>

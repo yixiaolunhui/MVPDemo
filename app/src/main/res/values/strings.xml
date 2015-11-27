@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">QQMenu</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_name">龙之音</string>
+    <string name="title_mingyan">\"只要锄头舞得好,什么墙角挖不到!\"</string>
+
+
+    <string-array name="planets_array">
+        <item>开通会员</item>
+        <item>个性装扮</item>
+        <item>我的收藏</item>
+        <item>我的相册</item>
+        <item>我的文件</item>
+    </string-array>
+
+
+    <!-- 首页     MSG0000-MSG0500-->
+    <string name="MSG0000">首页</string>
+    <string name="MSG0001">分类</string>
+    <string name="MSG0002">帮助</string>
+    <string name="MSG0003">我的</string>
+</resources>

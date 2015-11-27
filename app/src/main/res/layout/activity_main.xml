@@ -1,0 +1,71 @@
+<com.example.com.qqmenu.view.draglayout.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:fitsSystemWindows="false">
+
+    <include layout="@layout/menu_layout" />
+
+    <com.example.com.qqmenu.view.draglayout.MainLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/systemBar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/user_icon" />
+                    <com.example.com.qqmenu.view.TwoTabView
+                        android:id="@+id/home_tab_view"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <include
+                android:id="@+id/home_bottom_tab"
+                layout="@layout/home_bottom_tab"/>
+        </LinearLayout>
+
+    </com.example.com.qqmenu.view.draglayout.MainLayout>
+
+</com.example.com.qqmenu.view.draglayout.DragLayout>
